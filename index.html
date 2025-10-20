@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -110,3 +118,42 @@ table th, table td {
 table th {
   background-color: #f2f2f2;
 }
+  </style>
+</head>
+<body>
+  <div class="container" id="app">
+    <h1 class="title">To Do List</h1>
+    <p class="subtitle">Website sederhana untuk menentukan To Do List</p>
+    <div class="main">
+      <form id="budget-form">
+        <h2>Form Tambah To Do List</h2>
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" id="income" required>
+        </div>
+        <div class="button-action">
+          <button class="btn-reset" type="reset">Reset</button>
+          <button class="btn-submit" type="submit">Calculate Savings</button>
+        </div>
+      </form>
+      <div class="table-wrapper">
+        <table width="100%" border="1">
+            <tr>
+              <td>[Deskripsi]</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script>
+       new Vue({
+        el: '#app',
+        data: {},
+        methods: {},
+        mounted() {},
+       });
+    </script>
+  </div>
+</body>
+</html>
