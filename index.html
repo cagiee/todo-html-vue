@@ -137,8 +137,8 @@ table th {
       </form>
       <div class="table-wrapper">
         <table width="100%" border="1">
-            <tr>
-              <td>[Deskripsi]</td>
+            <tr v-for="data in todo">
+              <td>{{ data }}</td>
             </tr>
         </table>
       </div>
@@ -147,12 +147,14 @@ table th {
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
   <script>
-     new Vue({
+    new Vue({
       el: '#app',
-      data: {},
+      data: {
+        todo: ["Task 1"],
+      },
       methods: {},
       mounted() {},
-     });
+    });
   </script>
 </body>
 </html>
